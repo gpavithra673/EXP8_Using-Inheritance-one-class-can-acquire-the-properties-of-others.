@@ -11,29 +11,33 @@
 ```
 // NAME: PAVITHRA G
 // ROLLNO: 212221240036
-package ten;
+package q1;
 
-public class Main_2 {
-    public static void main(String [] args){
-        Color c;
-        c= new Redpaint();
-        c.paint();
+public class Main {
+    public static void main(String[] args) {
+        Bird c=new Bird();
+        c.fly();
+        c.walk();
+        c.sing();
     }
 }
-package ten;
-
-public class Color {
-    void paint() {
-        System.out.println("Painting");
+//CLASS FILE: BIRD
+public class Bird extends Animal{
+    public void fly(){
+        System.out.println("I m flying");
+    }
+    public void sing(){
+        System.out.println(" "+"I m singing");
     }
 }
-class Redpaint extends Color{
-    void paint(){
-        System.out.println("Red paint");
+//CLASS FILE: ANIMAL
+public class Animal {
+    public void walk(){
+        System.out.println("I m walking");
     }
 }
 
 ```
 
 ## RESULT:
-![image](https://github.com/gpavithra673/EXP8_Using-Inheritance-one-class-can-acquire-the-properties-of-others./assets/93427264/26d47163-25fc-4264-9a7b-f1524b20116f)
+![image](https://github.com/gpavithra673/EXP8_Using-Inheritance-one-class-can-acquire-the-properties-of-others./assets/93427264/f635dfec-467a-46ed-a11f-141fb3368754)
